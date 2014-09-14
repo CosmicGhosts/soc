@@ -12,13 +12,13 @@ var soc = require('soc');
 
 ### soc
 either give soc an object to wrap or just invoke soc.  
-soc will use an empty socject by default.  
-The cool part here is that soci will return an method to keep extending the socject.  
-```soc()``` or ```soc({foo: 'foo'})``` will return the ```extend``` and ```done``` methods wrapping the socject state.
+soc will use an empty object by default.  
+The cool part here is that soci will return an method to keep extending the object.  
+```soc()``` or ```soc({foo: 'foo'})``` will return the ```extend``` and ```done``` methods wrapping the object state.
 
 
 ### extend
-if you want to keep building on top of that socject, use the extend method to copy properties over to the initial object.
+if you want to keep building on top of that object, use the extend method to copy properties over to the initial object.
 The cool part is soc will recursively return new soc objects after you finish extending so you can keep composing with objects.
 ```
 socj = soc()
