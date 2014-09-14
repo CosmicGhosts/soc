@@ -1,11 +1,15 @@
 {
   "name": "soc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a simple object composer",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanstrom/soc"
+  },
   "scripts": {
-    "cc": "./node_modules/.bin/lsc -o lib -c src/*.ls",
-    "test-cc": "./node_modules/.bin/lsc -o lib-test -c test/*.ls",
+    "cc": "./node_modules/.bin/lsc -o lib -cb src/*.ls",
+    "test-cc": "./node_modules/.bin/lsc -o lib-test -cb test/*.ls",
     "pretest": "npm run-script cc && npm run-script test-cc",
     "test": "./node_modules/.bin/mocha lib-test/*.js",
     "prepublish": "npm run-script cc"
