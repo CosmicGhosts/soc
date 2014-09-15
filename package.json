@@ -24,10 +24,10 @@
   "author": "seanstrom",
   "license": "ISC",
   "devDependencies": {
-    "LiveScript": "^1.2.0",
-    "chai": "^1.9.1",
-    "mocha": "^1.21.4",
-    "sinon": "^1.10.3",
-    "sinon-chai": "^2.5.0"
+    "LiveScript": "~1.2.0",
+    "chai": "~1.9.1",
+    "mocha": "~1.21.4",
+    "sinon": "~1.10.3",
+    "sinon-chai": "~2.5.0"
   }
 }
