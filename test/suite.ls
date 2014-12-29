@@ -15,40 +15,40 @@ x = it.skip
 describe 'soc', ->
 
   describe '#done', ->
-    context 'when not given an initial socject', ->
+    context 'when not given an initial object', ->
       beforeEach ->
         @soc = soc()
 
-      o 'returns an empty socject', ->
+      o 'returns an empty object', ->
         expect(@soc.done()).to.eql {}
 
-    context 'when given an initial socject', ->
+    context 'when given an initial object', ->
       beforeEach ->
-        @initialsocject = foo: 'foo'
-        @soc = soc(@initialsocject)
+        @initialObject = foo: 'foo'
+        @soc = soc(@initialObject)
 
-      o 'returns the initial socject', ->
-        expect(@soc.done()).to.eql @initialsocject
+      o 'returns the initial object', ->
+        expect(@soc.done()).to.eql @initialObject
 
   describe '#extend', ->
     beforeEach ->
       @soc = soc()
 
-    context 'when extend is not given an socject', ->
-      o 'recursively calls soc with the initial socject', ->
+    context 'when extend is not given an object', ->
+      o 'recursively calls soc with the initial object', ->
         expect(@soc.extend().done()).to.eql {}
 
-    context 'when extend is given an socject', ->
-      o 'extends the initial socject wrapped by soc', ->
+    context 'when extend is given an object', ->
+      o 'extends the initial object wrapped by soc', ->
         expect(@soc.extend(foo: 'foo').done()).to.eql foo: 'foo'
 
   describe 'mutability', ->
-    context 'when soc is given an socject', ->
-      o 'Should return the same reference of initial socject', ->
+    context 'when soc is given an object', ->
+      o 'Should return the same reference of initial object', ->
         foo = foo: 'foo'
         expect(soc(foo).done()).to.equal foo
 
-      o 'Should extend the initial socject reference', ->
+      o 'Should extend the initial object reference', ->
         foo = foo: 'foo'
         bar = bar: 'bar'
         expect(soc(foo).extend(bar).done!).to.equal _extend(foo, bar)

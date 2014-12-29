@@ -1,8 +1,8 @@
 {_extend} = require 'util'
 
-soc = (initialsocject = {}) ->
+soc = (initialObject = {}) ->
   extend: (extension) ->
-    soc _extend(initialsocject, extension)
-  done: -> initialsocject
+    soc _extend(initialObject, extension)
+  done: -> initialObject
 
 module.exports = soc
