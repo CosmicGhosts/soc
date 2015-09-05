@@ -1,7 +1,7 @@
 assign = require 'object-assign'
 
 soc = (initial = {}) ->
-  extend: (obj) -> soc assign(initial, obj)
-  done: -> initial
+  merge: (obj) -> soc assign(initial, obj)
+  unwrap: -> initial
 
 module.exports = soc
