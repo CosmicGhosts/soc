@@ -1,6 +1,6 @@
 {
   "name": "soc",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "a simple object composer",
   "main": "./lib/index.js",
   "repository": {
