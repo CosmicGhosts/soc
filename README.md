@@ -1,5 +1,6 @@
 soc
 ===
+[![Build Status](https://travis-ci.org/seanstrom/soc.svg?branch=master)](https://travis-ci.org/seanstrom/soc)
 
 soc is a simple object composer, that allows you to compose/merge objects together.  
 Note this will change the values of the object reference you pass in initially, otherwise soc will create an object to compose for you.
