@@ -29,5 +29,8 @@
     "mocha": "~1.21.4",
     "sinon": "~1.10.3",
     "sinon-chai": "~2.5.0"
+  },
+  "dependencies": {
+    "object-assign": "^4.0.1"
   }
 }

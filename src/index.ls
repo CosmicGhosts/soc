@@ -1,8 +1,7 @@
-{_extend} = require 'util'
+assign = require 'object-assign'
 
-soc = (initialObject = {}) ->
-  extend: (extension) ->
-    soc _extend(initialObject, extension)
-  done: -> initialObject
+soc = (initial = {}) ->
+  extend: (obj) -> soc assign(initial, obj)
+  done: -> initial
 
 module.exports = soc
